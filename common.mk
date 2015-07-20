@@ -19,4 +19,6 @@ GENCODE_SM35	:= -gencode arch=compute_35,code=sm_35
 
 GENCODE_FLAGS	:= $(GENCODE_SM20) $(GENCODE_SM35)
 
+NVCCFLAGS += -std=c++11
+
 NVCCFLAGS	+= $(GENCODE_FLAGS) $(INCLUDES)
